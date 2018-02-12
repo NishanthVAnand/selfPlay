@@ -23,13 +23,13 @@ parser.add_argument('--gamma', type=float, default=0.01, metavar='Gamma',
 	help="Reward scaling factor")
 parser.add_argument('--tmax', type=int, default=500, metavar='Tmax',
 	help="Max time steps in self-play")
-parser.add_argument('--type', default="reset", metavar='Gamma',
+parser.add_argument('--type', default="reset",
 	help="Type of the environment| reset or reverse")
 parser.add_argument('--epochSelfPlay', type=int, default=50000, metavar='SelfPlayEpochs',
 	help="Number of episodes for self-play")
-parser.add_argument('--epochsTest', type=int, default=50000, metavar='Gamma',
+parser.add_argument('--epochsTest', type=int, default=50000,
 	help="Reward scaling factor")
-parser.add_argument('--GPU', type=bool, default=False, metavar='GPU',
+parser.add_argument('--GPU', type=bool, default=False, action='store_true',
 	help="bool value | True will use GPU")
 parser.add_argument('--lamb', type=float, default=0.003, metavar='lamb',
 	help="balancing parameter between reward and baseline")
