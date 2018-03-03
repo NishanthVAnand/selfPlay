@@ -5,12 +5,12 @@ from ..utils.select import select_action
 from ..utils.netUpdate import update
 
 def selfPlay(env,\
-			 policy_alice,\
-			 policy_bob,\
-			 optimizer_alice,\
-			 optimizer_bob,\
-			 initial_state,\
-			 args):
+	policy_alice,\
+	policy_bob,\
+	optimizer_alice,\
+	optimizer_bob,\
+	initial_state,\
+	args):
 	
 	"""
 	This function block implements the algorithm mentioned in the paper

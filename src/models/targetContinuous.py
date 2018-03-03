@@ -5,8 +5,8 @@ from ..utils.select import select_action
 from ..utils.netUpdate import update
 
 def target(policy_bob,\
-		   optimizer_bob,\
-		   args):
+	optimizer_bob,\
+	args):
 	
 	"""
 	This function implements the algorithm for solving the test task.
@@ -25,7 +25,7 @@ def target(policy_bob,\
 			action = select_action(policy_bob, np.concatenate((curr_state, np.zeros(env.observation_space.shape[0])), axis = 0), args)
 			curr_state, reward, done, info = env.step(action)
 			env_rew += reward
-			
+
 			if done or time_target >= args.tmax:
 				curr_state = env.reset()
 				break

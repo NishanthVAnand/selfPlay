@@ -66,11 +66,11 @@ if args.GPU:
 
 if __name__ == "__main__":
 	policy_bob = selfPlay(env,\
-						  policy_alice,\
-						  policy_bob,\
-						  optimizer_alice,\
-	 					  optimizer_bob,\
-						  initial_state,\
-						  args)
+		policy_alice,\
+		policy_bob,\
+		optimizer_alice,\
+		optimizer_bob,\
+		initial_state,\
+		args)
 
 	target(policy_bob, optimizer_bob, args)

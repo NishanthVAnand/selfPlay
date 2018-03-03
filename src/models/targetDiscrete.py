@@ -6,8 +6,8 @@ from ..utils.select import select_action
 from ..utils.netUpdate import update
 
 def target(policy_bob,\
-		   optimizer_bob,\
-		   args):
+	optimizer_bob,\
+	args):
 	
 	"""
 	This function implements the algorithm for solving the test task.
